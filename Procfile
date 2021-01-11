@@ -1,1 +1,1 @@
-web: gunicorn yogicrm.wsgi
+web: gunicorn crm1.wsgi
