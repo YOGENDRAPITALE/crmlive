@@ -1,0 +1,29 @@
+{% extends 'accounts/main.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body">
+			
+			{% if oid %}
+				<p>Are you sure you want to delete "{{order}}" ?</p>
+				<form action="{% url 'delete_order' order.id %}  " method="POST">
+					{% csrf_token %}
+					<a class="btn btn-warning" href="{% url 'home' %}">Cancel</a>
+					<input class="btn btn-danger" type="submit" name="Confirm">
+				</form>
+			{% else %}
+				<p>Are you sure you want to delete  "{{customer}}" ?</p>
+				<form action="{% url 'delete_customer' customer.id %} " method="POST">
+					{% csrf_token %}
+					<a class="btn btn-warning" href="{% url 'customer'  customer.id %}">Cancel</a>
+					<input class="btn btn-danger" type="submit" name="Confirm">
+				</form>
+			{% endif %}
+
+	</div>
+</div>
+</div>
+{% endblock %}
