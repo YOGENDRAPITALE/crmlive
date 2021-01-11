@@ -25,7 +25,7 @@ SECRET_KEY = '+1$-oy2132zhy*o@dg%b&odw1y$n7%((+ah!*$_vq2&0qc@0sh'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1:8000','yogicrm.herokuapp.com/']
+ALLOWED_HOSTS = ['127.0.0.1','yogicrm.herokuapp.com']
 
 
 # Application definition
@@ -134,7 +134,6 @@ MEDIA_ROOT =  os.path.join(BASE_DIR,"static/images")
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
