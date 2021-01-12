@@ -137,13 +137,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 
 
-#S3 BUCKETS CONFIG
-'''
-AWS_ACCESS_KEY_ID = 'AKIAVDLXUZ4WSSXGGIBM'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'yogicrm'
-AWS_S3_FILE_OVERWRITE = False
-AWS_DEFAULT_ACL = None
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-'''
+
